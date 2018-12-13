@@ -5,8 +5,8 @@ In this lab you work with the SharePoint Framework to extend the user interface 
 ## In this lab
 
 - [Introduction to Extensions & Application Customizer](#exercise1)
-- [Field Customizers](#exercise)
-- [List View Command Sets](#exercise1)
+- [Field Customizers](#exercise2)
+- [List View Command Sets](#exercise3)
 
 ## Prerequisites
 
