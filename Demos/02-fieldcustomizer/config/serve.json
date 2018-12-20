@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "fieldCustomizers": {
+        "PercentComplete": {
+          "id": "fcedd96a-1c34-4ac8-9ad8-5aaf4cb1e993",
+          "properties": {
+            "greenMinLimit": "85",
+            "yellowMinLimit": "70"
+          }
+        }
+      }
+    },
+    "percentComplete": {
+      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "fieldCustomizers": {
+        "PercentComplete": {
+          "id": "fcedd96a-1c34-4ac8-9ad8-5aaf4cb1e993",
+          "properties": {
+            "greenMinLimit": "85",
+            "yellowMinLimit": "70"
+          }
+        }
+      }
+    }
+  }
+}

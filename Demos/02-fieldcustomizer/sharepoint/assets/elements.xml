@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{0ebe7606-20f4-49be-bcdc-2dfc65348b46}"
+            Name="SPFxPercentage"
+            DisplayName="Percentage Complete"
+            Type="Number"
+            Min="0"
+            Required="FALSE"
+            Group="SPFx Columns"
+            ClientSideComponentId="fcedd96a-1c34-4ac8-9ad8-5aaf4cb1e993"
+            ClientSideComponentProperties="{&quot;greenMinLimit&quot;:&quot;85&quot;,&quot;yellowMinLimit&quot;:&quot;70&quot;}">
+    </Field>
+</Elements>
