@@ -14,6 +14,10 @@ In this lab you work with the SharePoint Framework to extend the user interface 
 - [Field Customizers](./Demos/02-fieldcustomizer)
 - [List View Command Sets](./Demos/03-listviewcommandset)
 
+## Watch the Module - Video
+
+This module has been recorded and is available in the SharePoint Development YouTube channel: [SharePoint Framework Training - Developing with the SharePoint Framework: Getting started with SharePoint Framework Extensions](https://www.youtube.com/watch?v=85DlxhbIK9I&list=PLR9nK3mnD-OV-RPXQ3Lco845qoEy7VJoc)
+
 ## Contributors
 
 |        Roles         |                        Author(s)                        |
