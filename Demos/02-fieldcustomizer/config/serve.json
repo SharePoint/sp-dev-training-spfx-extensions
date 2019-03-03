@@ -1,13 +1,16 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT license.
+
 {
   "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
   "port": 4321,
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/Lists/Work%20Status/AllItems.aspx",
       "fieldCustomizers": {
         "PercentComplete": {
-          "id": "fcedd96a-1c34-4ac8-9ad8-5aaf4cb1e993",
+          "id": "6a1b8997-00d5-4bc7-a472-41d6ac27cd83",
           "properties": {
             "greenMinLimit": "85",
             "yellowMinLimit": "70"
@@ -15,14 +18,13 @@
         }
       }
     },
-    "percentComplete": {
+    "helloFieldCustomizer": {
       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "fieldCustomizers": {
-        "PercentComplete": {
-          "id": "fcedd96a-1c34-4ac8-9ad8-5aaf4cb1e993",
+        "InternalFieldName": {
+          "id": "6a1b8997-00d5-4bc7-a472-41d6ac27cd83",
           "properties": {
-            "greenMinLimit": "85",
-            "yellowMinLimit": "70"
+            "sampleText": "Value"
           }
         }
       }

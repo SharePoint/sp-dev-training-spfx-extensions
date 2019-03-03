@@ -1,0 +1,14 @@
+/* 
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT license.
+ */
+ 
+.HelloFieldCustomizer {
+  .cell {
+    display: 'inline-block';
+  }
+  .filledBackground {
+    background-color: #cccccc;
+    width: 100px;
+  }
+}

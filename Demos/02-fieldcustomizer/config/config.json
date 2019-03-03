@@ -2,17 +2,17 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "percent-complete-field-customizer": {
+    "hello-field-customizer-field-customizer": {
       "components": [
         {
-          "entrypoint": "./lib/extensions/percentComplete/PercentCompleteFieldCustomizer.js",
-          "manifest": "./src/extensions/percentComplete/PercentCompleteFieldCustomizer.manifest.json"
+          "entrypoint": "./lib/extensions/helloFieldCustomizer/HelloFieldCustomizerFieldCustomizer.js",
+          "manifest": "./src/extensions/helloFieldCustomizer/HelloFieldCustomizerFieldCustomizer.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "PercentCompleteFieldCustomizerStrings": "lib/extensions/percentComplete/loc/{locale}.js"
+    "HelloFieldCustomizerFieldCustomizerStrings": "lib/extensions/helloFieldCustomizer/loc/{locale}.js"
   }
 }
