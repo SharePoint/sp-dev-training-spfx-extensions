@@ -36,7 +36,6 @@ In this exercise you will create a SharePoint Framework (SPFx) application custo
     - **Which baseline packages do you want to target for your component(s)?**: SharePoint Online only (latest)
     - **Where do you want to place the files?**: Use the current folder
     - **Do you want to allow the tenant admin the choice of being able to deploy the solution to all sites immediately without running any feature deployment or adding apps in sites?**: No
-    - **Will the components in the solution require permissions to access web APIs that are unique and not shared with other components in the tenant?**: No
     - **Which type of client-side component to create?**: Extension
     - **What type of client-side extension to create?**: Application Customizer
     - **What is your Application Customizer name?**: HelloAppCustomizer
@@ -44,7 +43,7 @@ In this exercise you will create a SharePoint Framework (SPFx) application custo
 
     After provisioning the folders required for the project, the generator will install all the dependency packages using NPM.
 
-1. When NPM completes downloading all dependencies, test the default project provisioned byb the generator.
+1. When NPM completes downloading all dependencies, test the default project provisioned by the generator.
 
     Extensions must be tested in a modern SharePoint page unlike web parts which can be tested in the local workbench. In addition, extensions also require special URL parameters when requesting the page to load the extension from the local development web server.
     1. Obtain the URL of a modern SharePoint page.
@@ -59,7 +58,7 @@ In this exercise you will create a SharePoint Framework (SPFx) application custo
         gulp serve
         ```
 
-    1. When the SharePoint page loads, SharePoint will prompt you to load the debug scripts. This is a confirmation check to ensure you really want to load scripts from an untrusted source. In this case, that is your local development web server on **httpa://localhost** which you can trust.
+    1. When the SharePoint page loads, SharePoint will prompt you to load the debug scripts. This is a confirmation check to ensure you really want to load scripts from an untrusted source. In this case, that is your local development web server on **https://localhost** which you can trust.
 
         Select the button **Load debug scripts**.
 
@@ -269,10 +268,14 @@ In this step you will modify the application customizer to write some pre-define
         ```
 
 1. Update the app customizer to display the placeholders:
-    1. Update the `onInit()` method so that the following code is executed immediately before the `return` statement:
+    1. Replace the code in the `onInit()` method with the following code:
 
         ```ts
+        Log.info(LOG_SOURCE, `Initialized ${strings.Title}`);
+
         this.context.placeholderProvider.changedEvent.add(this, this._renderPlaceHolders);
+
+        return Promise.resolve();
         ```
 
 ### Test the Application Customizer
@@ -295,9 +298,9 @@ In this step you will modify the application customizer to write some pre-define
 In this step you will deploy the application customizer to your entire SharePoint tenant.
 
 1. Locate and open the **./config/package-solution.json** file.
-    1. Ensure the property `solution.skipFeatureDeployment` is set to **true**.
-1. Locate and open the **./sharepoint/assets/ClientSideInstance.xml** file. This contains the values that will be automatically set on the **Tenant Wide Extensions** list in your SharePoint Online tenant's App Catalog site when the package is deployed.
-1. Build and package the solution by running the following commands:
+    1. Ensure the `solution` object has a property named `skipFeatureDeployment` and ensure that the value of this property is set to **true**. 
+1. Locate and open the **./sharepoint/assets/ClientSideInstance.xml** file. This file contains the values that will be automatically set on the **Tenant Wide Extensions** list in your SharePoint Online tenant's App Catalog site when the package is deployed.
+1. Build and package the solution by running the following commands one at a time:
 
     ```shell
     gulp build
@@ -316,7 +319,8 @@ In this step you will deploy the application customizer to your entire SharePoin
         ![Screenshot deploying the extension to the entire tenant](./Images/appcust-tenantwidedeploy-01.png)
 
     1. Select **Site contents** in the left-hand navigation.
-    1. Select **Tenant Wide Extensions**.
+    1. Select **Tenant Wide Extensions**. Depending on when your tenant was created the **Tenant Wide Extensions** list may be hidden. If
+    you do not see the list in the Site Contents then you will have to navigate to it manually. Do this by appending `/Lists/TenantWideExtensions/AllItems.aspx` to the URL of the app catalog site.
 
         ![Screenshot displaying the Tenant Wide Extensions list](./Images/appcust-tenantwidedeploy-02.png)
 
