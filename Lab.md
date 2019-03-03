@@ -353,7 +353,6 @@ In this exercise you will create a SharePoint Framework (SPFx) field customizer 
     - **Which baseline packages do you want to target for your component(s)?**: SharePoint Online only (latest)
     - **Where do you want to place the files?**: Use the current folder
     - **Do you want to allow the tenant admin the choice of being able to deploy the solution to all sites immediately without running any feature deployment or adding apps in sites?**: No
-    - **Will the components in the solution require permissions to access web APIs that are unique and not shared with other components in the tenant?**: No
     - **Which type of client-side component to create?**: Extension
     - **What type of client-side extension to create?**: Field Customizer
     - **What is your Field Customizer name?**: HelloFieldCustomizer
@@ -466,6 +465,25 @@ In this exercise you will create a SharePoint Framework (SPFx) field customizer 
             "properties": {
               "greenMinLimit": "85",
               "yellowMinLimit": "70"
+            }
+            ```
+
+            > NOTE: You do not need to change the value of the `id` property.
+
+            The JSON for the default serve configuration should look something like the following:
+
+            ```json
+            "default": {
+              "pageUrl": "https://contoso.sharepoint.com/sites/mySite/Lists/Work%20Status/AllItems.aspx",
+              "fieldCustomizers": {
+                "PercentComplete": {
+                  "id": "6a1b8997-00d5-4bc7-a472-41d6ac27cd83",
+                  "properties": {
+                    "greenMinLimit": "85",
+                    "yellowMinLimit": "70"
+                  }
+                }
+              }
             }
             ```
 
