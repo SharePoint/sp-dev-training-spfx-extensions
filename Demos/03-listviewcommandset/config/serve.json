@@ -1,12 +1,15 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT license.
+
 {
   "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
   "port": 4321,
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://robwindsortest992.sharepoint.com/sites/demo/Lists/Work%20Status/AllItems.aspx",
       "customActions": {
-        "cd8b0598-8730-4388-8941-d359b0bc50fa": {
+        "46501859-ba4c-435a-be90-d38b09576a42": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
           "properties": {
             "messagePrefix": "[command_set_prefix]"
@@ -17,10 +20,11 @@
     "commandSetDemo": {
       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "customActions": {
-        "cd8b0598-8730-4388-8941-d359b0bc50fa": {
+        "46501859-ba4c-435a-be90-d38b09576a42": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
           "properties": {
-            "messagePrefix": "[command_set_prefix]"
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
           }
         }
       }
