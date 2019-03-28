@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT license.
+
 import { override } from '@microsoft/decorators';
 import { Log } from '@microsoft/sp-core-library';
 import {
@@ -16,6 +19,7 @@ import * as strings from 'CommandSetDemoCommandSetStrings';
  * You can define an interface to describe it.
  */
 export interface ICommandSetDemoCommandSetProperties {
+  // This is an example; replace with your own properties
   messagePrefix: string;
 }
 
@@ -31,7 +35,6 @@ export default class CommandSetDemoCommandSet extends BaseListViewCommandSet<ICo
 
   @override
   public onListViewUpdated(event: IListViewCommandSetListViewUpdatedParameters): void {
-    // if exactly one / two items selected, show correct button
     const one_item_selected: Command = this.tryGetCommand('ONE_ITEM_SELECTED');
     if (one_item_selected) {
       one_item_selected.visible = event.selectedRows.length === 1;

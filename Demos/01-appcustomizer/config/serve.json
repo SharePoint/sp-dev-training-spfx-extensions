@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT license.
+
 {
   "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
   "port": 4321,
@@ -6,7 +9,7 @@
     "default": {
       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "customActions": {
-        "44970301-52a9-443f-94b2-c7c0e7407537": {
+        "08f0bd28-caa4-4efb-aa07-efce477c253d": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
             "header": "Header area of the page",
@@ -18,11 +21,10 @@
     "helloAppCustomizer": {
       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "customActions": {
-        "44970301-52a9-443f-94b2-c7c0e7407537": {
+        "08f0bd28-caa4-4efb-aa07-efce477c253d": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "header": "Header area of the page",
-            "footer": "Footer area of the page"
+            "testMessage": "Test message"
           }
         }
       }

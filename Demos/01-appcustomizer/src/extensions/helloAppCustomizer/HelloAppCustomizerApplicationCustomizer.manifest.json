@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-extension-manifest.schema.json",
 
-  "id": "44970301-52a9-443f-94b2-c7c0e7407537",
+  "id": "08f0bd28-caa4-4efb-aa07-efce477c253d",
   "alias": "HelloAppCustomizerApplicationCustomizer",
   "componentType": "Extension",
   "extensionType": "ApplicationCustomizer",

@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT license.
+
 import { override } from '@microsoft/decorators';
 import { Log } from '@microsoft/sp-core-library';
 import {
@@ -20,12 +23,15 @@ const LOG_SOURCE: string = 'HelloAppCustomizerApplicationCustomizer';
  * You can define an interface to describe it.
  */
 export interface IHelloAppCustomizerApplicationCustomizerProperties {
+  // This is an example; replace with your own property
   header: string;
   footer: string;
 }
 
 /** A Custom Action which can be run during execution of a Client Side Application */
-export default class HelloAppCustomizerApplicationCustomizer extends BaseApplicationCustomizer<IHelloAppCustomizerApplicationCustomizerProperties> {
+export default class HelloAppCustomizerApplicationCustomizer
+  extends BaseApplicationCustomizer<IHelloAppCustomizerApplicationCustomizerProperties> {
+
   private _topPlaceholder: PlaceholderContent | undefined;
   private _bottomPlaceholder: PlaceholderContent | undefined;
 
@@ -50,18 +56,18 @@ export default class HelloAppCustomizerApplicationCustomizer extends BaseApplica
         PlaceholderName.Top,
         { onDispose: this._onDispose }
       );
-
+    
       if (!this._topPlaceholder) {
         console.error('The expected placeholder (Top) was not found.');
         return;
       }
-
+    
       if (this.properties) {
         let headerMessage: string = this.properties.header;
         if (!headerMessage) {
           headerMessage = '(header property was not defined.)';
         }
-
+    
         if (this._topPlaceholder.domElement) {
           this._topPlaceholder.domElement.innerHTML = `
             <div class="${styles.app}">
@@ -72,24 +78,24 @@ export default class HelloAppCustomizerApplicationCustomizer extends BaseApplica
         }
       }
     }
-
+    
     if (!this._bottomPlaceholder) {
       this._bottomPlaceholder = this.context.placeholderProvider.tryCreateContent(
         PlaceholderName.Bottom,
         { onDispose: this._onDispose }
       );
-
+    
       if (!this._bottomPlaceholder) {
         console.error('The expected placeholder (Bottom) was not found.');
         return;
       }
-
+    
       if (this.properties) {
         let footerMessage: string = this.properties.footer;
         if (!footerMessage) {
           footerMessage = '(footer property was not defined.)';
         }
-
+    
         if (this._bottomPlaceholder.domElement) {
           this._bottomPlaceholder.domElement.innerHTML = `
             <div class="${styles.app}">
@@ -99,11 +105,10 @@ export default class HelloAppCustomizerApplicationCustomizer extends BaseApplica
             </div>`;
         }
       }
-    }
-  }
+    }    
+  }  
 
   private _onDispose(): void {
     console.log('[HelloWorldApplicationCustomizer._onDispose] Disposed custom top and bottom placeholders.');
-  }
-
+  }  
 }

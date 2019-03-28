@@ -9,7 +9,7 @@ In this demo you will deploy a SharePoint Framework (SPFx) application customize
     npm install
     ```
 
-1. Build and package the solution by running the following commands:
+1. Build and package the solution by running the following commands one at a time:
 
     ```shell
     gulp build
@@ -28,7 +28,8 @@ In this demo you will deploy a SharePoint Framework (SPFx) application customize
         ![Screenshot deploying the extension to the entire tenant](../../Images/appcust-tenantwidedeploy-01.png)
 
     1. Select **Site contents** in the left-hand navigation.
-    1. Select **Tenant Wide Extensions**.
+    1. Select **Tenant Wide Extensions**. Depending on when your tenant was created the **Tenant Wide Extensions** list may be hidden. If
+    you do not see the list in the Site Contents then you will have to navigate to it manually. Do this by appending `/Lists/TenantWideExtensions/AllItems.aspx` to the URL of the app catalog site.
 
         ![Screenshot displaying the Tenant Wide Extensions list](../../Images/appcust-tenantwidedeploy-02.png)
 

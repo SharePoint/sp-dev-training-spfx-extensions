@@ -32,6 +32,24 @@ In this demo you will create a SharePoint Framework (SPFx) field customizer exte
           "yellowMinLimit": "70"
         }
         ```
+        > NOTE: You do not need to change the value of the `id` property.
+
+        The JSON for the default serve configuration should look something like the following:
+
+        ```json
+        "default": {
+            "pageUrl": "https://contoso.sharepoint.com/sites/mySite/Lists/Work%20Status/AllItems.aspx",
+            "fieldCustomizers": {
+            "PercentComplete": {
+                "id": "6a1b8997-00d5-4bc7-a472-41d6ac27cd83",
+                "properties": {
+                "greenMinLimit": "85",
+                "yellowMinLimit": "70"
+                }
+            }
+            }
+        }
+        ```        
 
 1. Run the project by executing the following command:
 
