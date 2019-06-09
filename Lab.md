@@ -521,6 +521,7 @@ In this exercise you will create a SharePoint Framework (SPFx) command set exten
     - **Which baseline packages do you want to target for your component(s)?**: SharePoint Online only (latest)
     - **Where do you want to place the files?**: Use the current folder
     - **Do you want to allow the tenant admin the choice of being able to deploy the solution to all sites immediately without running any feature deployment or adding apps in sites?**: No
+    - **Will the components in the solution require permissions to access web APIs that are unique and not shared with other components in the tenant?**: No
     - **Which type of client-side component to create?**: Extension
     - **What type of client-side extension to create?**: ListView Command Set
     - **What is your Command Set name?**: CommandSetDemo
@@ -530,7 +531,7 @@ In this exercise you will create a SharePoint Framework (SPFx) command set exten
 
 1. Define the command set buttons to add to the SharePoint list.
     1. Locate and open the **./src/extensions/commandSetDemo/CommandSetDemoCommandSet.manifest.json** file.
-    1. Add the following markup to the end of the file, just before the closing `}`:
+    1. Replace the existing `items` property with the following:
 
         ```json
         "items": {
