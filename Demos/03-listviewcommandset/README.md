@@ -8,18 +8,16 @@ In this demo you will create a SharePoint Framework (SPFx) command set extension
 
     ![Screenshot of sample data in a list](../../Images/fieldcust-setuplist03.png)
 
+1. Open a command prompt and navigate to the folder that contains the built project for this demo.
+1. Download and install all necessary dependencies using the following command:
+
+    ```shell
+    npm install
+    ```
+
 1. Update the properties for the serve configuration used to test and debug the extension:
     1. Locate and open the **./config/serve.json** file.
     1. Copy in the full URL (including **AllItems.aspx**) of the list `serveConfigurations.default.pageUrl` property.
-    1. Locate the `serveConfigurations.default.customActions.properties` object.
-    1. Change the value of the `properties` object to the following:
-
-        ```json
-        "properties": {
-          "messagePrefix": "[command_set_prefix]"
-        }
-        ```
-
 1. Run the project by executing the following command:
 
     ```shell
