@@ -7,7 +7,7 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://robwindsortest990.sharepoint.com/sites/demo/Lists/Work%20Status/AllItems.aspx",
+      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/Lists/Work%20Status/AllItems.aspx",
       "fieldCustomizers": {
         "PercentComplete": {
           "id": "8b833adb-7cd5-4bc8-b68d-cd5c288b5973",
