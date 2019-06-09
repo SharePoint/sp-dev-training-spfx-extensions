@@ -7,10 +7,10 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/Lists/Work%20Status/AllItems.aspx",
+      "pageUrl": "https://robwindsortest990.sharepoint.com/sites/demo/Lists/Work%20Status/AllItems.aspx",
       "fieldCustomizers": {
         "PercentComplete": {
-          "id": "6a1b8997-00d5-4bc7-a472-41d6ac27cd83",
+          "id": "8b833adb-7cd5-4bc8-b68d-cd5c288b5973",
           "properties": {
             "greenMinLimit": "85",
             "yellowMinLimit": "70"
@@ -22,7 +22,7 @@
       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "fieldCustomizers": {
         "InternalFieldName": {
-          "id": "6a1b8997-00d5-4bc7-a472-41d6ac27cd83",
+          "id": "8b833adb-7cd5-4bc8-b68d-cd5c288b5973",
           "properties": {
             "sampleText": "Value"
           }
