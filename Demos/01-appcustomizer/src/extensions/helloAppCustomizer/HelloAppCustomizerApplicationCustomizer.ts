@@ -1,6 +1,8 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
 
+import styles from './HelloAppCustomizerApplicationCustomizer.module.scss';
+import { escape } from '@microsoft/sp-lodash-subset';
 import { override } from '@microsoft/decorators';
 import { Log } from '@microsoft/sp-core-library';
 import {
@@ -12,9 +14,6 @@ import { Dialog } from '@microsoft/sp-dialog';
 
 import * as strings from 'HelloAppCustomizerApplicationCustomizerStrings';
 
-import styles from './HelloAppCustomizerApplicationCustomizer.module.scss';
-import { escape } from '@microsoft/sp-lodash-subset';
-
 const LOG_SOURCE: string = 'HelloAppCustomizerApplicationCustomizer';
 
 /**
@@ -23,7 +22,6 @@ const LOG_SOURCE: string = 'HelloAppCustomizerApplicationCustomizer';
  * You can define an interface to describe it.
  */
 export interface IHelloAppCustomizerApplicationCustomizerProperties {
-  // This is an example; replace with your own property
   header: string;
   footer: string;
 }
@@ -40,9 +38,13 @@ export default class HelloAppCustomizerApplicationCustomizer
     Log.info(LOG_SOURCE, `Initialized ${strings.Title}`);
 
     this.context.placeholderProvider.changedEvent.add(this, this._renderPlaceHolders);
-
+    
     return Promise.resolve();
   }
+
+  private _onDispose(): void {
+    console.log('[HelloWorldApplicationCustomizer._onDispose] Disposed custom top and bottom placeholders.');
+  }  
 
   private _renderPlaceHolders(): void {
     console.log('Available application customizer placeholders: ',
@@ -77,8 +79,8 @@ export default class HelloAppCustomizerApplicationCustomizer
             </div>`;
         }
       }
-    }
-    
+    }    
+
     if (!this._bottomPlaceholder) {
       this._bottomPlaceholder = this.context.placeholderProvider.tryCreateContent(
         PlaceholderName.Bottom,
@@ -106,9 +108,5 @@ export default class HelloAppCustomizerApplicationCustomizer
         }
       }
     }    
-  }  
-
-  private _onDispose(): void {
-    console.log('[HelloWorldApplicationCustomizer._onDispose] Disposed custom top and bottom placeholders.');
   }  
 }

@@ -2,10 +2,11 @@
   "@microsoft/generator-sharepoint": {
     "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.7.1",
+    "version": "1.8.2",
     "libraryName": "sp-fx-command-set",
-    "libraryId": "b35ba00a-d105-4628-b580-9d3480434e37",
+    "libraryId": "f0b148c0-f9ab-48f7-beb7-37afa2e7e54d",
     "packageManager": "npm",
+    "isDomainIsolated": false,
     "componentType": "extension",
     "extensionType": "ListViewCommandSet"
   }

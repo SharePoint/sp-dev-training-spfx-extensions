@@ -19,7 +19,6 @@ import * as strings from 'CommandSetDemoCommandSetStrings';
  * You can define an interface to describe it.
  */
 export interface ICommandSetDemoCommandSetProperties {
-  // This is an example; replace with your own properties
   messagePrefix: string;
 }
 

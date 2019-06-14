@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) Microsoft Corporation. All rights reserved.
+     Licensed under the MIT License. -->
+
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
     <CustomAction
         Title="CommandSetDemo"
         RegistrationId="100"
         RegistrationType="List"
         Location="ClientSideExtension.ListViewCommandSet.CommandBar"
-        ClientSideComponentId="46501859-ba4c-435a-be90-d38b09576a42"
-        ClientSideComponentProperties="{&quot;messagePrefix&quot;:&quot;[command_set_prefix]&quot;}"
+        ClientSideComponentId="60042847-61e6-4413-a733-e5953f3a0752"
+        ClientSideComponentProperties="{&quot;messagePrefix&quot;:&quot;[command_set_prefix]&quot;}">
     </CustomAction>
 </Elements>

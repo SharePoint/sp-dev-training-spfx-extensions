@@ -2,10 +2,11 @@
   "@microsoft/generator-sharepoint": {
     "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.7.1",
+    "version": "1.8.2",
     "libraryName": "sp-fx-field-customizer",
-    "libraryId": "c5162338-7894-48af-abef-c93249bad7b4",
+    "libraryId": "05081c5a-9dd1-4d6b-8428-0e38a06fb2ef",
     "packageManager": "npm",
+    "isDomainIsolated": false,
     "componentType": "extension",
     "extensionType": "FieldCustomizer"
   }

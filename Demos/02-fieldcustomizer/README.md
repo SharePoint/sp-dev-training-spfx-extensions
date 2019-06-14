@@ -1,6 +1,6 @@
 # DEMO: Field Customizers
 
-In this demo you will create a SharePoint Framework (SPFx) field customizer extension that will display a colored bar in a column with a percentage of the bar filled depending on the value in the field.
+In this demo you will test a SharePoint Framework (SPFx) field customizer extension that will display a colored bar in a column with a percentage of the bar filled depending on the value in the field.
 
 1. In a browser, navigate to a SharePoint Online modern site collection where you want to test the field customizer.
 1. Select the **Site contents** link in the left-hand navigation.
@@ -19,20 +19,16 @@ In this demo you will create a SharePoint Framework (SPFx) field customizer exte
 
         ![Screenshot of sample data in a list](../../Images/fieldcust-setuplist03.png)
 
+1. Open a command prompt and navigate to the folder that contains the built project for this demo.
+1. Download and install all necessary dependencies using the following command:
+
+    ```shell
+    npm install
+    ```
+
 1. Update the properties for the serve configuration used to test and debug the extension:
     1. Locate and open the **./config/serve.json** file.
     1. Copy in the full URL (including **AllItems.aspx**) of the list you just created into the `serveConfigurations.default.pageUrl` property.
-    1. Locate the `serveConfigurations.default.properties` object.
-    1. Change the name of the property `serveConfigurations.default.fieldCustomizers.InternalFieldName` to `serveConfigurations.default.fieldCustomizers.PercentComplete`. This tells the SharePoint Framework which existing field to associate the field customizer with.
-    1. Change the value of the `properties` object to the following:
-
-        ```json
-        "properties": {
-          "greenMinLimit": "85",
-          "yellowMinLimit": "70"
-        }
-        ```
-        > NOTE: You do not need to change the value of the `id` property.
 
         The JSON for the default serve configuration should look something like the following:
 
@@ -40,13 +36,13 @@ In this demo you will create a SharePoint Framework (SPFx) field customizer exte
         "default": {
             "pageUrl": "https://contoso.sharepoint.com/sites/mySite/Lists/Work%20Status/AllItems.aspx",
             "fieldCustomizers": {
-            "PercentComplete": {
-                "id": "6a1b8997-00d5-4bc7-a472-41d6ac27cd83",
-                "properties": {
-                "greenMinLimit": "85",
-                "yellowMinLimit": "70"
+                "PercentComplete": {
+                    "id": "6a1b8997-00d5-4bc7-a472-41d6ac27cd83",
+                    "properties": {
+                        "greenMinLimit": "85",
+                        "yellowMinLimit": "70"
+                    }
                 }
-            }
             }
         }
         ```        
