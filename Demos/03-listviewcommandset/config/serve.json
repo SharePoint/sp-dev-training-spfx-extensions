@@ -7,7 +7,7 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://robwindsortest991.sharepoint.com/sites/Demo/Lists/Work%20Status/AllItems.aspx",
+      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/Demo/Lists/Work%20Status/AllItems.aspx",
       "customActions": {
         "c5b46dec-2177-42df-9790-0c120133dfd5": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
