@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-extension-manifest.schema.json",
 
-  "id": "8b833adb-7cd5-4bc8-b68d-cd5c288b5973",
+  "id": "f8b2f69f-070e-497f-92a9-c38f58c848fc",
   "alias": "HelloFieldCustomizerFieldCustomizer",
   "componentType": "Extension",
   "extensionType": "FieldCustomizer",
