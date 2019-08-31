@@ -23,6 +23,8 @@ To complete this lab, you need the following:
 
 In this exercise you will create a SharePoint Framework (SPFx) application customizer extension.
 
+> NOTE: The instructions below assume you are using v1.9.1 of the SharePoint Framework Yeoman generator.
+
 1. Open a command prompt and change to the folder where you want to create the project.
 1. Run the SharePoint Yeoman generator by executing the following command:
 
@@ -340,6 +342,8 @@ In this step you will deploy the application customizer to your entire SharePoin
 ## Exercise 2: Field Customizers
 
 In this exercise you will create a SharePoint Framework (SPFx) field customizer extension that will display a colored bar in a column with a percentage of the bar filled depending on the value in the field.
+
+> NOTE: The instructions below assume you are using v1.9.1 of the SharePoint Framework Yeoman generator.
 
 1. Open a command prompt and change to the folder where you want to create the project.
 1. Run the SharePoint Yeoman generator by executing the following command:
