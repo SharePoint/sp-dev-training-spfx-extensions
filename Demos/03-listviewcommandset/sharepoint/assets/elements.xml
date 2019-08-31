@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!-- Copyright (c) Microsoft Corporation. All rights reserved.
-     Licensed under the MIT License. -->
+<!-- 
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the MIT license. 
+-->
 
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
     <CustomAction
@@ -9,7 +10,7 @@
         RegistrationId="100"
         RegistrationType="List"
         Location="ClientSideExtension.ListViewCommandSet.CommandBar"
-        ClientSideComponentId="60042847-61e6-4413-a733-e5953f3a0752"
-        ClientSideComponentProperties="{&quot;messagePrefix&quot;:&quot;[command_set_prefix]&quot;}">
+        ClientSideComponentId="c5b46dec-2177-42df-9790-0c120133dfd5"
+        ClientSideComponentProperties="{&quot;messagePrefix&quot;:&quot;[command_set_prefix]&quot;}"
     </CustomAction>
 </Elements>
