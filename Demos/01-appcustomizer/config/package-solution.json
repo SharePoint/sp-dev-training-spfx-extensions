@@ -1,20 +1,17 @@
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT license.
-
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "sp-fx-app-customizer-client-side-solution",
-    "id": "cc6f789e-1647-496d-839b-f87aa2dfe050",
+    "id": "d294dcc5-7ab5-46b5-8255-1ee17492a6c2",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
-    "isDomainIsolated": false,
     "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
     "features": [
       {
         "title": "Application Extension - Deployment of custom action.",
         "description": "Deploys a custom action with ClientSideComponentId association",
-        "id": "6d028a78-c1e0-4acc-86a3-59ba29bec770",
+        "id": "17ebf324-4f6f-469c-b9d5-97043c4bd2b4",
         "version": "1.0.0.0",
         "assets": {
           "elementManifests": [

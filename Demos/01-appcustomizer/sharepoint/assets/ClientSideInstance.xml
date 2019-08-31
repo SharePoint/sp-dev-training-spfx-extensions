@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the MIT license. 
+-->
+
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
     <ClientSideComponentInstance
         Title="HelloAppCustomizer"
         Location="ClientSideExtension.ApplicationCustomizer"
-        ComponentId="0df47195-0e07-4a71-b119-9b605d435198"
+        ComponentId="6e2ddbb0-4002-4eb0-8384-517c1d3feff7"
         Properties="{&quot;header&quot;:&quot;Header area of the page&quot;,&quot;footer&quot;:&quot;Footer area of the page&quot;}">
     </ClientSideComponentInstance>
 </Elements>

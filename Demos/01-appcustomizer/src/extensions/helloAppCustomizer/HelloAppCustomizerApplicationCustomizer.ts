@@ -1,8 +1,6 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
 
-import styles from './HelloAppCustomizerApplicationCustomizer.module.scss';
-import { escape } from '@microsoft/sp-lodash-subset';
 import { override } from '@microsoft/decorators';
 import { Log } from '@microsoft/sp-core-library';
 import {
@@ -13,6 +11,9 @@ import {
 import { Dialog } from '@microsoft/sp-dialog';
 
 import * as strings from 'HelloAppCustomizerApplicationCustomizerStrings';
+
+import styles from './HelloAppCustomizerApplicationCustomizer.module.scss';
+import { escape } from '@microsoft/sp-lodash-subset';
 
 const LOG_SOURCE: string = 'HelloAppCustomizerApplicationCustomizer';
 
@@ -41,10 +42,6 @@ export default class HelloAppCustomizerApplicationCustomizer
     
     return Promise.resolve();
   }
-
-  private _onDispose(): void {
-    console.log('[HelloWorldApplicationCustomizer._onDispose] Disposed custom top and bottom placeholders.');
-  }  
 
   private _renderPlaceHolders(): void {
     console.log('Available application customizer placeholders: ',
@@ -79,7 +76,7 @@ export default class HelloAppCustomizerApplicationCustomizer
             </div>`;
         }
       }
-    }    
+    }
 
     if (!this._bottomPlaceholder) {
       this._bottomPlaceholder = this.context.placeholderProvider.tryCreateContent(
@@ -107,6 +104,10 @@ export default class HelloAppCustomizerApplicationCustomizer
             </div>`;
         }
       }
-    }    
-  }  
+    }
+  }
+
+  private _onDispose(): void {
+    console.log('[HelloWorldApplicationCustomizer._onDispose] Disposed custom top and bottom placeholders.');
+  }
 }
