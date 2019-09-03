@@ -1,6 +1,3 @@
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT license.
-
 import { override } from '@microsoft/decorators';
 import { Log } from '@microsoft/sp-core-library';
 import {
