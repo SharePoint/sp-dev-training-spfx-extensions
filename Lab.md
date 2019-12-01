@@ -48,12 +48,12 @@ In this exercise you will create a SharePoint Framework (SPFx) application custo
 
 1. When NPM completes downloading all dependencies, test the default project provisioned by the generator.
 
-    Extensions must be tested in a modern SharePoint page unlike web parts which can be tested in the local workbench. In addition, extensions also require special URL parameters when requesting the page to load the extension from the local development web server.
+    Unlike web parts which can be tested in the local workbench, extensions must be tested in a modern SharePoint page. Special query string parameters are included with the request to indicate that the extension should be loaded from the local development web server.
     1. Obtain the URL of a modern SharePoint page.
     1. Open the **./config/serve.json** file.
     1. Copy in the URL of your modern SharePoint page into the `serveConfigurations.default.pageUrl` property.
 
-        > *The SPFx build process' gulp **serve** task will launch a browser and navigate to this URL, appending the necessary URL parameters to the end of the URL to load the SPFx extension from your local development web server.*
+        > *The SPFx build process' gulp **serve** task will launch a browser and navigate to this URL, appending the necessary query string parameters.*
 
     1. Run the project by executing the following command:
 
