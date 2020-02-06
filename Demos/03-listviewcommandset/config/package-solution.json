@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "sp-fx-command-set-client-side-solution",
-    "id": "b81226c8-f9ac-4205-9032-b90c74ad039c",
+    "id": "d84ec520-5d2d-4c86-8f53-80efa4a74f31",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "isDomainIsolated": false,
@@ -10,12 +10,12 @@
       {
         "title": "Application Extension - Deployment of custom action.",
         "description": "Deploys a custom action with ClientSideComponentId association",
-        "id": "e3f961c3-abb6-461a-b7a6-4c80df2d9d96",
+        "id": "ec8b7773-2a42-47a8-ada1-ac05cf171e31",
         "version": "1.0.0.0",
         "assets": {
           "elementManifests": [
             "elements.xml",
-            "clientsideinstance.xml"
+            "ClientSideInstance.xml"
           ]
         }
       }

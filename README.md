@@ -1,42 +1,55 @@
-# Microsoft SharePoint Framework Training Module - Getting Started with SharePoint Framework Extensions
+# Microsoft SharePoint Framework Training Module - Extend the SharePoint user interface with SharePoint Framework extensions
 
 This module will introduce you to extending the SharePoint user interface with extensions.
 
-## Lab - Getting Started with SharePoint Framework Extensions
+> This module is also published as a Microsoft Learn module: [Enable SharePoint Framework Web Part Configuration with Property Panes](https://docs.microsoft.com/learn/modules/sharepoint-spfx-extensions)
 
-In this lab you work with the SharePoint Framework to extend the user interface with extensions. This includes: application customers, field customizers and command sets.
+## Lab - Extend the SharePoint user interface with SharePoint Framework extensions
 
-- [Lab manual](./Lab.md)
+The lab for this module is available in multiple units within the associated Microsoft Learn module. Use the following links to jump to the specific unit. Each Microsoft Learn unit represents a different lab exercise & demo in the presentation.
+
+- [Exercise - Create an application customizer extension](https://docs.microsoft.com/learn/modules/sharepoint-spfx-extensions/3-exercise-application-customizer)
+
+    In this exercise, you'll create a SharePoint Framework (SPFx) application customizer extension.
+
+- [Exercise - Create a field customizer extension](https://docs.microsoft.com/learn/modules/sharepoint-spfx-extensions/5-exercise-field-customizer)
+
+    In this exercise, you'll create a SharePoint Framework (SPFx) field customizer extension that will display a colored bar in a column with a percentage of the bar filled depending on the value in the field.
+
+- [Exercise - Customize lists with command set extensions](https://docs.microsoft.com/learn/modules/sharepoint-spfx-extensions/7-exercise-command-set-customizer)
+
+    In this exercise, you'll create a SharePoint Framework (SPFx) command set extension that will display custom buttons in a SharePoint list.
 
 ## Demos
 
-- [Introduction to Extensions & Application Customizer](./Demos/01-appcustomizer)
-- [Field Customizers](./Demos/02-fieldcustomizer)
-- [List View Command Sets](./Demos/03-listviewcommandset)
+- [Create an application customizer extension](./Demos/01-appcustomizer)
+- [Create a field customizer extension](./Demos/02-fieldcustomizer)
+- [Customize lists with command set extensions](./Demos/03-listviewcommandset)
 
 ## Watch the Module - Video
 
-This module has been recorded and is available in the SharePoint Development YouTube channel: [SharePoint Framework Training - Developing with the SharePoint Framework: Getting started with SharePoint Framework Extensions](https://www.youtube.com/watch?v=85DlxhbIK9I&list=PLR9nK3mnD-OV-RPXQ3Lco845qoEy7VJoc)
+This module has been recorded and is available in the SharePoint Development YouTube channel: [SharePoint Framework Training - Developing with the SharePoint Framework: Extend the SharePoint user interface with SharePoint Framework extensions](https://www.youtube.com/watch?v=85DlxhbIK9I&list=PLR9nK3mnD-OV-RPXQ3Lco845qoEy7VJoc)
 
 ## Contributors
 
-|        Roles         |                                       Author(s)                                       |
-| -------------------- | ------------------------------------------------------------------------------------- |
-| Lab Manuals / Slides | Andrew Connell (Microsoft MVP, Voitanos) [@andrewconnell](//github.com/andrewconnell) |
-| QA                   | Rob Windsor (Microsoft MVP, PAIT Group) [@rob-windsor](//github.com/rob-windsor)      |
-| Sponsor / Support    | Vesa Juvonen (Microsoft) [@VesaJuvonen](//github.com/VesaJuvonen)                     |
+|        Roles         |                                                   Author(s)                                                    |
+| -------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Lab Manuals / Slides | Andrew Connell (Microsoft MVP, [Voitanos](//github.com/voitanos)) [@andrewconnell](//github.com/andrewconnell) |
+| QA                   | Rob Windsor (Microsoft MVP, PAIT Group) [@rob-windsor](//github.com/rob-windsor)                               |
+| Sponsor / Support    | Vesa Juvonen (Microsoft) [@VesaJuvonen](//github.com/VesaJuvonen)                                              |
 
 ## Version history
 
-| Version |       Date        |                    Comments                    |
-| ------- | ----------------- | ---------------------------------------------- |
-| 1.6     | December 6, 2019  | 2020Q2 content refresh                         |
-| 1.5     | September 2, 2019 | 2020Q1 content refresh                         |
-| 1.4     | June 10, 2019     | FY2019Q4 content refresh                       |
-| 1.3     | March 6, 2019     | FY2019Q3 Content refresh                       |
-| 1.2     | January 17, 2019  | Slide updates, added screencast link to readme |
-| 1.1     | December 12, 2018 | Rewritten to use latest guidance               |
-| 1.0     | ~February 2017    | Initial release                                |
+| Version |       Date        |                      Comments                      |
+| ------- | ----------------- | -------------------------------------------------- |
+| 1.7     | March 10, 2020    | FY2020Q3 content refresh & port module to MS Learn |
+| 1.6     | December 6, 2019  | FY2020Q2 content refresh                           |
+| 1.5     | September 2, 2019 | FY2020Q1 content refresh                           |
+| 1.4     | June 10, 2019     | FY2019Q4 content refresh                           |
+| 1.3     | March 6, 2019     | FY2019Q3 Content refresh                           |
+| 1.2     | January 17, 2019  | Slide updates, added screencast link to readme     |
+| 1.1     | December 12, 2018 | Rewritten to use latest guidance                   |
+| 1.0     | ~February 2017    | Initial release                                    |
 
 ## Disclaimer
 
