@@ -8,7 +8,7 @@ Licensed under the MIT license.
     <CustomAction
         Title="HelloAppCustomizer"
         Location="ClientSideExtension.ApplicationCustomizer"
-        ClientSideComponentId="6e2ddbb0-4002-4eb0-8384-517c1d3feff7"
+        ClientSideComponentId="e0d94086-deda-4c10-a1a8-274286f16472"
         ClientSideComponentProperties="{&quot;header&quot;:&quot;Header area of the page&quot;,&quot;footer&quot;:&quot;Footer area of the page&quot;}">
     </CustomAction>
 </Elements>

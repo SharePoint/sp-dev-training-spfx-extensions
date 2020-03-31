@@ -10,7 +10,7 @@ Licensed under the MIT license.
         RegistrationId="100"
         RegistrationType="List"
         Location="ClientSideExtension.ListViewCommandSet.CommandBar"
-        ClientSideComponentId="c5b46dec-2177-42df-9790-0c120133dfd5"
-        ClientSideComponentProperties="{&quot;messagePrefix&quot;:&quot;[command_set_prefix]&quot;}"
+        ClientSideComponentId="93c624a4-13df-4e43-a1c8-fa8da95eb949"
+        ClientSideComponentProperties="{&quot;messagePrefix&quot;:&quot;[command_set_prefix]&quot;}">
     </CustomAction>
 </Elements>
