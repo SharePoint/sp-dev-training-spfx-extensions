@@ -1,6 +1,6 @@
 # DEMO: Customize lists with command set extensions
 
-This completed project is the result of the lab exercise **Customize lists with command set extensions** that is referenced in the [README](../../) in this repo.
+This completed project is the result of the lab exercise **Customize lists with command set extensions** that is referenced in the [README](../../README) in this repo.
 
 ## Prerequisites
 

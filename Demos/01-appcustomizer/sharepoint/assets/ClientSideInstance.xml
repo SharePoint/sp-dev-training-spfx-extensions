@@ -3,12 +3,11 @@
 Copyright (c) Microsoft Corporation. All rights reserved.
 Licensed under the MIT license. 
 -->
-
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
     <ClientSideComponentInstance
         Title="HelloAppCustomizer"
         Location="ClientSideExtension.ApplicationCustomizer"
-        ComponentId="e0d94086-deda-4c10-a1a8-274286f16472"
+        ComponentId="4f492d6d-8347-44b0-be9e-c6c72cb2e3e4"
         Properties="{&quot;header&quot;:&quot;Header area of the page&quot;,&quot;footer&quot;:&quot;Footer area of the page&quot;}">
     </ClientSideComponentInstance>
 </Elements>

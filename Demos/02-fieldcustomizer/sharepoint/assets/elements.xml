@@ -3,16 +3,15 @@
 Copyright (c) Microsoft Corporation. All rights reserved.
 Licensed under the MIT license. 
 -->
-
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-    <Field ID="{1be01f95-7c10-460f-b63d-3a0e934f878a}"
+    <Field ID="{258a1f05-c10f-4310-a951-54b43838be8c}"
             Name="SPFxPercentage"
             DisplayName="Percentage"
             Type="Number"
             Min="0"
             Required="FALSE"
             Group="SPFx Columns"
-            ClientSideComponentId="a50d3e32-b8e7-44ad-94ad-eb5be4a5d007"
+            ClientSideComponentId="b63167fb-f837-4693-9ba1-4bf27c7d824a"
             ClientSideComponentProperties="{&quot;greenMinLimit&quot;:&quot;85&quot;,&quot;yellowMinLimit&quot;:&quot;70&quot;}">
     </Field>
 </Elements>

@@ -1,6 +1,6 @@
 # DEMO: Create a field customizer extension
 
-This completed project is the result of the lab exercise **Create a field customizer extension** that is referenced in the [README](../../) in this repo.
+This completed project is the result of the lab exercise **Create a field customizer extension** that is referenced in the [README](../../README.ms) in this repo.
 
 ## Prerequisites
 

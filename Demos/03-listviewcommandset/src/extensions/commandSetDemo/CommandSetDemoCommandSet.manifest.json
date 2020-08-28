@@ -1,10 +1,10 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/command-set-extension-manifest.schema.json",
+
   // Copyright (c) Microsoft Corporation. All rights reserved.
   // Licensed under the MIT license.
 
-  "$schema": "https://developer.microsoft.com/json-schemas/spfx/command-set-extension-manifest.schema.json",
-
-  "id": "93c624a4-13df-4e43-a1c8-fa8da95eb949",
+  "id": "6dd4aba7-f468-4104-aaa4-d9218d553a48",
   "alias": "CommandSetDemoCommandSet",
   "componentType": "Extension",
   "extensionType": "ListViewCommandSet",

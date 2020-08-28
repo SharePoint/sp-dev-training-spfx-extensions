@@ -10,15 +10,15 @@ The lab for this module is available in multiple units within the associated Mic
 
 - [Exercise - Create an application customizer extension](https://docs.microsoft.com/learn/modules/sharepoint-spfx-extensions/3-exercise-application-customizer)
 
-    In this exercise, you'll create a SharePoint Framework (SPFx) application customizer extension.
+  In this exercise, you'll create a SharePoint Framework (SPFx) application customizer extension.
 
 - [Exercise - Create a field customizer extension](https://docs.microsoft.com/learn/modules/sharepoint-spfx-extensions/5-exercise-field-customizer)
 
-    In this exercise, you'll create a SharePoint Framework (SPFx) field customizer extension that will display a colored bar in a column with a percentage of the bar filled depending on the value in the field.
+  In this exercise, you'll create a SharePoint Framework (SPFx) field customizer extension that will display a colored bar in a column with a percentage of the bar filled depending on the value in the field.
 
 - [Exercise - Customize lists with command set extensions](https://docs.microsoft.com/learn/modules/sharepoint-spfx-extensions/7-exercise-command-set-customizer)
 
-    In this exercise, you'll create a SharePoint Framework (SPFx) command set extension that will display custom buttons in a SharePoint list.
+  In this exercise, you'll create a SharePoint Framework (SPFx) command set extension that will display custom buttons in a SharePoint list.
 
 ## Demos
 
@@ -32,7 +32,7 @@ This module has been recorded and is available in the SharePoint Development You
 
 ## Contributors
 
-|        Roles         |                                                   Author(s)                                                    |
+| Roles                | Author(s)                                                                                                      |
 | -------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Lab Manuals / Slides | Andrew Connell (Microsoft MVP, [Voitanos](//github.com/voitanos)) [@andrewconnell](//github.com/andrewconnell) |
 | QA                   | Rob Windsor (Microsoft MVP, PAIT Group) [@rob-windsor](//github.com/rob-windsor)                               |
@@ -40,8 +40,9 @@ This module has been recorded and is available in the SharePoint Development You
 
 ## Version history
 
-| Version |       Date        |                      Comments                      |
+| Version | Date              | Comments                                           |
 | ------- | ----------------- | -------------------------------------------------- |
+| 1.8     | August 31, 2020   | FY2021Q1 content refresh                           |
 | 1.7     | March 10, 2020    | FY2020Q3 content refresh & port module to MS Learn |
 | 1.6     | December 6, 2019  | FY2020Q2 content refresh                           |
 | 1.5     | September 2, 2019 | FY2020Q1 content refresh                           |
