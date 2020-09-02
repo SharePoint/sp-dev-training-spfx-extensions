@@ -3,14 +3,13 @@
 Copyright (c) Microsoft Corporation. All rights reserved.
 Licensed under the MIT license. 
 -->
-
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
     <CustomAction
         Title="CommandSetDemo"
         RegistrationId="100"
         RegistrationType="List"
         Location="ClientSideExtension.ListViewCommandSet.CommandBar"
-        ClientSideComponentId="93c624a4-13df-4e43-a1c8-fa8da95eb949"
+        ClientSideComponentId="6dd4aba7-f468-4104-aaa4-d9218d553a48"
         ClientSideComponentProperties="{&quot;messagePrefix&quot;:&quot;[command_set_prefix]&quot;}">
     </CustomAction>
 </Elements>

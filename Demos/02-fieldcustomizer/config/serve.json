@@ -1,7 +1,4 @@
 {
-  // Copyright (c) Microsoft Corporation. All rights reserved.
-  // Licensed under the MIT license.
-
   "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
   "port": 4321,
   "https": true,
@@ -10,7 +7,7 @@
       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "fieldCustomizers": {
         "PercentComplete": {
-          "id": "a50d3e32-b8e7-44ad-94ad-eb5be4a5d007",
+          "id": "b63167fb-f837-4693-9ba1-4bf27c7d824a",
           "properties": {
             "greenMinLimit": "85",
             "yellowMinLimit": "70"
@@ -22,7 +19,7 @@
       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "fieldCustomizers": {
         "InternalFieldName": {
-          "id": "a50d3e32-b8e7-44ad-94ad-eb5be4a5d007",
+          "id": "b63167fb-f837-4693-9ba1-4bf27c7d824a",
           "properties": {
             "sampleText": "Value"
           }

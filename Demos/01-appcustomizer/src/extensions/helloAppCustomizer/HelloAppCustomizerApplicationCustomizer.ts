@@ -1,9 +1,6 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
 
-import styles from './HelloAppCustomizerApplicationCustomizer.module.scss';
-import { escape } from '@microsoft/sp-lodash-subset';
-
 import { override } from '@microsoft/decorators';
 import { Log } from '@microsoft/sp-core-library';
 import {
@@ -12,6 +9,9 @@ import {
   PlaceholderName
 } from '@microsoft/sp-application-base';
 import { Dialog } from '@microsoft/sp-dialog';
+
+import styles from './HelloAppCustomizerApplicationCustomizer.module.scss';
+import { escape } from '@microsoft/sp-lodash-subset';
 
 import * as strings from 'HelloAppCustomizerApplicationCustomizerStrings';
 
