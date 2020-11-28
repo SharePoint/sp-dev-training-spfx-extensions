@@ -4,7 +4,7 @@
     "environment": "spo",
     "version": "1.11.0",
     "libraryName": "sp-fx-app-customizer",
-    "libraryId": "43592b45-3758-4055-8593-c986155bbf66",
+    "libraryId": "e6ed86fc-1147-4970-bbbd-b250bdb55c01",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "extension",

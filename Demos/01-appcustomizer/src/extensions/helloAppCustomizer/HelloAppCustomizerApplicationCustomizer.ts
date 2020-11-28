@@ -10,10 +10,10 @@ import {
 } from '@microsoft/sp-application-base';
 import { Dialog } from '@microsoft/sp-dialog';
 
+import * as strings from 'HelloAppCustomizerApplicationCustomizerStrings';
+
 import styles from './HelloAppCustomizerApplicationCustomizer.module.scss';
 import { escape } from '@microsoft/sp-lodash-subset';
-
-import * as strings from 'HelloAppCustomizerApplicationCustomizerStrings';
 
 const LOG_SOURCE: string = 'HelloAppCustomizerApplicationCustomizer';
 
@@ -41,10 +41,6 @@ export default class HelloAppCustomizerApplicationCustomizer
     this.context.placeholderProvider.changedEvent.add(this, this._renderPlaceHolders);
 
     return Promise.resolve();
-  }
-
-  private _onDispose(): void {
-    console.log('[HelloWorldApplicationCustomizer._onDispose] Disposed custom top and bottom placeholders.');
   }
 
   private _renderPlaceHolders(): void {
@@ -109,5 +105,9 @@ export default class HelloAppCustomizerApplicationCustomizer
         }
       }
     }
+  }
+
+  private _onDispose(): void {
+    console.log('[HelloWorldApplicationCustomizer._onDispose] Disposed custom top and bottom placeholders.');
   }
 }

@@ -4,14 +4,14 @@ Copyright (c) Microsoft Corporation. All rights reserved.
 Licensed under the MIT license. 
 -->
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-    <Field ID="{258a1f05-c10f-4310-a951-54b43838be8c}"
+    <Field ID="{ffb1e61c-7154-4c1c-81b4-f09b7154a815}"
             Name="SPFxPercentage"
             DisplayName="Percentage"
             Type="Number"
             Min="0"
             Required="FALSE"
             Group="SPFx Columns"
-            ClientSideComponentId="b63167fb-f837-4693-9ba1-4bf27c7d824a"
+            ClientSideComponentId="e09819dc-8237-4415-ab25-a9ce413f5172"
             ClientSideComponentProperties="{&quot;greenMinLimit&quot;:&quot;85&quot;,&quot;yellowMinLimit&quot;:&quot;70&quot;}">
     </Field>
 </Elements>

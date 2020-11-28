@@ -43,7 +43,7 @@ export default class HelloFieldCustomizerFieldCustomizer
     // determine color and text to use
     const fieldValue = parseInt(event.fieldValue);
     let filledColor: string = '';
-
+    
     if (isNaN(fieldValue) || fieldValue === 0) {
       event.domElement.innerHTML = `
         <div class="${styles.HelloFieldCustomizer}">
@@ -62,7 +62,7 @@ export default class HelloFieldCustomizerFieldCustomizer
       } else {
         filledColor = '#ff0000';
       }
-
+    
       event.domElement.innerHTML = `
         <div class="${styles.HelloFieldCustomizer}">
           <div class="${styles.filledBackground}">
