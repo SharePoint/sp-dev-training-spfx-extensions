@@ -7,7 +7,7 @@ Licensed under the MIT license.
     <ClientSideComponentInstance
         Title="HelloAppCustomizer"
         Location="ClientSideExtension.ApplicationCustomizer"
-        ComponentId="4f492d6d-8347-44b0-be9e-c6c72cb2e3e4"
+        ComponentId="b98b82ea-2449-4ab5-a2f4-040563c35db5"
         Properties="{&quot;header&quot;:&quot;Header area of the page&quot;,&quot;footer&quot;:&quot;Footer area of the page&quot;}">
     </ClientSideComponentInstance>
 </Elements>
