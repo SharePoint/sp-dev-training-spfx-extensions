@@ -4,7 +4,7 @@
     "environment": "spo",
     "version": "1.11.0",
     "libraryName": "sp-fx-command-set",
-    "libraryId": "d4d3e45a-40de-49f9-858b-cfbffeda1afa",
+    "libraryId": "7ea44337-ae2c-4d13-a3aa-e9909e1a372d",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "extension",

@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 
-Copyright (c) Microsoft Corporation. All rights reserved.
-Licensed under the MIT license. 
--->
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-    <Field ID="{ffb1e61c-7154-4c1c-81b4-f09b7154a815}"
+    <Field ID="{69d574c0-aad4-424c-9f0e-5796830f0925}"
             Name="SPFxPercentage"
             DisplayName="Percentage"
             Type="Number"
             Min="0"
             Required="FALSE"
             Group="SPFx Columns"
-            ClientSideComponentId="e09819dc-8237-4415-ab25-a9ce413f5172"
+            ClientSideComponentId="f123aba9-1e14-44e0-88f0-f1be4a137ffe",
             ClientSideComponentProperties="{&quot;greenMinLimit&quot;:&quot;85&quot;,&quot;yellowMinLimit&quot;:&quot;70&quot;}">
     </Field>
 </Elements>

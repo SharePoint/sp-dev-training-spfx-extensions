@@ -1,6 +1,3 @@
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT license.
-
 import { override } from '@microsoft/decorators';
 import { Log } from '@microsoft/sp-core-library';
 import {
@@ -39,8 +36,12 @@ export default class HelloAppCustomizerApplicationCustomizer
     Log.info(LOG_SOURCE, `Initialized ${strings.Title}`);
 
     this.context.placeholderProvider.changedEvent.add(this, this._renderPlaceHolders);
-
+    
     return Promise.resolve();
+  }
+
+  private _onDispose(): void {
+    console.log('[HelloWorldApplicationCustomizer._onDispose] Disposed custom top and bottom placeholders.');
   }
 
   private _renderPlaceHolders(): void {
@@ -105,9 +106,5 @@ export default class HelloAppCustomizerApplicationCustomizer
         }
       }
     }
-  }
-
-  private _onDispose(): void {
-    console.log('[HelloWorldApplicationCustomizer._onDispose] Disposed custom top and bottom placeholders.');
   }
 }

@@ -4,7 +4,7 @@
     "environment": "spo",
     "version": "1.11.0",
     "libraryName": "sp-fx-field-customizer",
-    "libraryId": "52277cd8-bf57-4ed1-adfc-4ecf857e76d9",
+    "libraryId": "2b748c86-f430-41c2-a821-059021059977",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "extension",
