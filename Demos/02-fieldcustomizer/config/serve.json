@@ -7,7 +7,7 @@
       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "fieldCustomizers": {
         "PercentComplete": {
-          "id": "e09819dc-8237-4415-ab25-a9ce413f5172",
+          "id": "f123aba9-1e14-44e0-88f0-f1be4a137ffe",
           "properties": {
             "greenMinLimit": "85",
             "yellowMinLimit": "70"
@@ -19,7 +19,7 @@
       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "fieldCustomizers": {
         "InternalFieldName": {
-          "id": "e09819dc-8237-4415-ab25-a9ce413f5172",
+          "id": "f123aba9-1e14-44e0-88f0-f1be4a137ffe",
           "properties": {
             "sampleText": "Value"
           }
