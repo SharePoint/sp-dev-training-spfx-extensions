@@ -51,7 +51,7 @@ export default class CommandSetDemoCommandSet extends BaseListViewCommandSet<ICo
         Dialog.alert(`${this.properties.messagePrefix} ONE_ITEM_SELECTED command checked; Title = ${event.selectedRows[0].getValueByName('Title')}`);
         break;
       case 'TWO_ITEM_SELECTED':
-        Dialog.alert(`${this.properties.messagePrefix} TWO_ITEM_SELECTED command checked; Title = ${event.selectedRows[event.selectedRows.length-1].getValueByName('Title')}`);
+        Dialog.alert(`${this.properties.messagePrefix} TWO_ITEM_SELECTED command checked; Title = ${event.selectedRows[event.selectedRows.length - 1].getValueByName('Title')}`);
         break;
       case 'ALWAYS_ON':
         Dialog.alert(`${this.properties.messagePrefix} ALWAYS_ON command checked. Total selected: ${event.selectedRows.length}`);

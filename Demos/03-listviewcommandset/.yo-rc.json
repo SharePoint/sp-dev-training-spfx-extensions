@@ -2,9 +2,9 @@
   "@microsoft/generator-sharepoint": {
     "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.11.0",
+    "version": "1.12.1",
     "libraryName": "sp-fx-command-set",
-    "libraryId": "7ea44337-ae2c-4d13-a3aa-e9909e1a372d",
+    "libraryId": "42206909-02b0-4561-aabf-ef983df3285e",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "extension",

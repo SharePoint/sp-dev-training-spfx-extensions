@@ -4,9 +4,9 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://m365x285179.sharepoint.com/sites/DeveloperSite/Lists/Work%20Status/AllItems.aspx",
+      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "customActions": {
-        "462b5884-d98d-4082-8d84-2f21ac0d6d11": {
+        "c584af79-2727-4123-8d57-c265473ce146": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
           "properties": {
             "messagePrefix": "[command_set_prefix]"
@@ -17,7 +17,7 @@
     "commandSetDemo": {
       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "customActions": {
-        "462b5884-d98d-4082-8d84-2f21ac0d6d11": {
+        "c584af79-2727-4123-8d57-c265473ce146": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
           "properties": {
             "sampleTextOne": "One item is selected in the list",
