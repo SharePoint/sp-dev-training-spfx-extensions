@@ -2,9 +2,9 @@
   "@microsoft/generator-sharepoint": {
     "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.11.0",
+    "version": "1.12.1",
     "libraryName": "sp-fx-app-customizer",
-    "libraryId": "2ba8b803-223b-4186-96c7-fa0db19b897d",
+    "libraryId": "f6c7b707-3d68-4758-833d-3b2f26802fcf",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "extension",
