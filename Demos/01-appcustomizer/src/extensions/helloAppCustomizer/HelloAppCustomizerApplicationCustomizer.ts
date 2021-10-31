@@ -30,7 +30,6 @@ export interface IHelloAppCustomizerApplicationCustomizerProperties {
 /** A Custom Action which can be run during execution of a Client Side Application */
 export default class HelloAppCustomizerApplicationCustomizer
   extends BaseApplicationCustomizer<IHelloAppCustomizerApplicationCustomizerProperties> {
-
   private _topPlaceholder: PlaceholderContent | undefined;
   private _bottomPlaceholder: PlaceholderContent | undefined;
 
@@ -39,7 +38,7 @@ export default class HelloAppCustomizerApplicationCustomizer
     Log.info(LOG_SOURCE, `Initialized ${strings.Title}`);
 
     this.context.placeholderProvider.changedEvent.add(this, this._renderPlaceHolders);
-
+    
     return Promise.resolve();
   }
 
@@ -109,5 +108,6 @@ export default class HelloAppCustomizerApplicationCustomizer
         }
       }
     }
+
   }
 }
