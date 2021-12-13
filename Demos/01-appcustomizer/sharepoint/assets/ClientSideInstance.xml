@@ -3,7 +3,7 @@
     <ClientSideComponentInstance
         Title="HelloAppCustomizer"
         Location="ClientSideExtension.ApplicationCustomizer"
-        ComponentId="2af7fd02-7263-458c-b3d3-372421df8d61"
+        ComponentId="f89afd92-7c60-41e1-bdfa-4faa84dadb99"
         Properties="{&quot;header&quot;:&quot;Header area of the page&quot;,&quot;footer&quot;:&quot;Footer area of the page&quot;}">
     </ClientSideComponentInstance>
 </Elements>
