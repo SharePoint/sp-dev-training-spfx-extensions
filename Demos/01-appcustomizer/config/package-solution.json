@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "sp-fx-app-customizer-client-side-solution",
-    "id": "2c2e7e8e-2358-4d42-ab0d-87210c5efce6",
+    "id": "e6bb5831-323f-402f-b104-1e543816b417",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
@@ -12,13 +12,13 @@
       "websiteUrl": "",
       "privacyUrl": "",
       "termsOfUseUrl": "",
-      "mpnId": "Undefined-1.13.0"
+      "mpnId": "Undefined-1.13.1"
     },
     "features": [
       {
         "title": "Application Extension - Deployment of custom action.",
         "description": "Deploys a custom action with ClientSideComponentId association",
-        "id": "0e70f4f6-2362-48fb-988f-a202348bf2cf",
+        "id": "5e354b9c-9b15-4ce7-9aa2-21bc29bad21f",
         "version": "1.0.0.0",
         "assets": {
           "elementManifests": [
