@@ -1,13 +1,13 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
 
-import { override } from '@microsoft/decorators';
 import { Log } from '@microsoft/sp-core-library';
 import {
   BaseListViewCommandSet,
   Command,
   IListViewCommandSetListViewUpdatedParameters,
-  IListViewCommandSetExecuteEventParameters
+  IListViewCommandSetExecuteEventParameters,
+  ListViewStateChangedEventArgs
 } from '@microsoft/sp-listview-extensibility';
 import { Dialog } from '@microsoft/sp-dialog';
 
@@ -26,13 +26,11 @@ const LOG_SOURCE: string = 'CommandSetDemoCommandSet';
 
 export default class CommandSetDemoCommandSet extends BaseListViewCommandSet<ICommandSetDemoCommandSetProperties> {
 
-  @override
   public onInit(): Promise<void> {
     Log.info(LOG_SOURCE, 'Initialized CommandSetDemoCommandSet');
     return Promise.resolve();
   }
 
-  @override
   public onListViewUpdated(event: IListViewCommandSetListViewUpdatedParameters): void {
     const one_item_selected: Command = this.tryGetCommand('ONE_ITEM_SELECTED');
     if (one_item_selected) {
@@ -44,14 +42,13 @@ export default class CommandSetDemoCommandSet extends BaseListViewCommandSet<ICo
     }
   }
 
-  @override
   public onExecute(event: IListViewCommandSetExecuteEventParameters): void {
     switch (event.itemId) {
       case 'ONE_ITEM_SELECTED':
         Dialog.alert(`${this.properties.messagePrefix} ONE_ITEM_SELECTED command checked; Title = ${event.selectedRows[0].getValueByName('Title')}`);
         break;
       case 'TWO_ITEM_SELECTED':
-        Dialog.alert(`${this.properties.messagePrefix} TWO_ITEM_SELECTED command checked; Title = ${event.selectedRows[event.selectedRows.length - 1].getValueByName('Title')}`);
+        Dialog.alert(`${this.properties.messagePrefix} TWO_ITEM_SELECTED command checked; Title = ${event.selectedRows[event.selectedRows.length-1].getValueByName('Title')}`);
         break;
       case 'ALWAYS_ON':
         Dialog.alert(`${this.properties.messagePrefix} ALWAYS_ON command checked. Total selected: ${event.selectedRows.length}`);
