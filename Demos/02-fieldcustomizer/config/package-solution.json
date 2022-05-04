@@ -2,22 +2,34 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "sp-fx-field-customizer-client-side-solution",
-    "id": "3dc45cf4-e93c-43f5-b14b-7079955d4681",
+    "id": "8f1dc0f0-5335-42d5-a232-e54d59a5b46b",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "developer": {
       "name": "",
       "websiteUrl": "",
       "privacyUrl": "",
       "termsOfUseUrl": "",
-      "mpnId": "Undefined-1.13.1"
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "SPFxFieldCustomizer description"
+      },
+      "longDescription": {
+        "default": "SPFxFieldCustomizer description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
     },
     "features": [
       {
-        "title": "Application Extension - Deployment of custom action.",
+        "title": "Application Extension - Deployment of custom action",
         "description": "Deploys a custom action with ClientSideComponentId association",
-        "id": "92bec411-e407-4f33-9561-ad8c5727309a",
+        "id": "5387ed6d-6818-475c-838c-9400ee48da7b",
         "version": "1.0.0.0",
         "assets": {
           "elementManifests": [

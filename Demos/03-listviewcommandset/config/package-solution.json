@@ -2,22 +2,34 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "sp-fx-command-set-client-side-solution",
-    "id": "c2c45c41-824d-49ef-adb1-f14c9ee1d204",
+    "id": "5df27761-d04d-4532-8c7c-b8a337a3fbbc",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "developer": {
       "name": "",
       "websiteUrl": "",
       "privacyUrl": "",
       "termsOfUseUrl": "",
-      "mpnId": "Undefined-1.13.1"
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "SPFxCommandSet description"
+      },
+      "longDescription": {
+        "default": "SPFxCommandSet description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
     },
     "features": [
       {
-        "title": "Application Extension - Deployment of custom action.",
+        "title": "Application Extension - Deployment of custom action",
         "description": "Deploys a custom action with ClientSideComponentId association",
-        "id": "51eabc8b-76cd-422f-9267-8f1c150e861d",
+        "id": "3e349cf8-f870-404e-bfa7-431ae3e8b1dc",
         "version": "1.0.0.0",
         "assets": {
           "elementManifests": [
