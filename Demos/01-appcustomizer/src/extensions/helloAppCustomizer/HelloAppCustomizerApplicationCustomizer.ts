@@ -33,16 +33,16 @@ export default class HelloAppCustomizerApplicationCustomizer
   private _topPlaceholder: PlaceholderContent | undefined;
   private _bottomPlaceholder: PlaceholderContent | undefined;
 
-  private _onDispose(): void {
-    console.log('[HelloWorldApplicationCustomizer._onDispose] Disposed custom top and bottom placeholders.');
-  }
-
   public onInit(): Promise<void> {
     Log.info(LOG_SOURCE, `Initialized ${strings.Title}`);
 
     this.context.placeholderProvider.changedEvent.add(this, this._renderPlaceHolders);
-    
+
     return Promise.resolve();
+  }
+
+  private _onDispose(): void {
+    console.log('[HelloWorldApplicationCustomizer._onDispose] Disposed custom top and bottom placeholders.');
   }
 
   private _renderPlaceHolders(): void {
@@ -57,18 +57,18 @@ export default class HelloAppCustomizerApplicationCustomizer
         PlaceholderName.Top,
         { onDispose: this._onDispose }
       );
-    
+
       if (!this._topPlaceholder) {
         console.error('The expected placeholder (Top) was not found.');
         return;
       }
-    
+
       if (this.properties) {
         let headerMessage: string = this.properties.header;
         if (!headerMessage) {
           headerMessage = '(header property was not defined.)';
         }
-    
+
         if (this._topPlaceholder.domElement) {
           this._topPlaceholder.domElement.innerHTML = `
             <div class="${styles.app}">
@@ -85,18 +85,18 @@ export default class HelloAppCustomizerApplicationCustomizer
         PlaceholderName.Bottom,
         { onDispose: this._onDispose }
       );
-    
+
       if (!this._bottomPlaceholder) {
         console.error('The expected placeholder (Bottom) was not found.');
         return;
       }
-    
+
       if (this.properties) {
         let footerMessage: string = this.properties.footer;
         if (!footerMessage) {
           footerMessage = '(footer property was not defined.)';
         }
-    
+
         if (this._bottomPlaceholder.domElement) {
           this._bottomPlaceholder.domElement.innerHTML = `
             <div class="${styles.app}">
