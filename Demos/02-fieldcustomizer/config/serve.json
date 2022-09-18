@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
   "port": 4321,
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://m365x08978750.sharepoint.com/sites/DeveloperSite/Lists/Work%20Status/AllItems.aspx",
+      "pageUrl": "https://m365x23090844.sharepoint.com/sites/DeveloperSite/Lists/Work%20Status/AllItems.aspx",
       "fieldCustomizers": {
         "PercentComplete": {
-          "id": "64c50c02-176d-438a-af03-d15da7758877",
+          "id": "ca8b6df7-c494-4f76-a6e1-a006b6eb8624",
           "properties": {
             "greenMinLimit": "85",
             "yellowMinLimit": "70"
@@ -19,7 +19,7 @@
       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "fieldCustomizers": {
         "InternalFieldName": {
-          "id": "64c50c02-176d-438a-af03-d15da7758877",
+          "id": "ca8b6df7-c494-4f76-a6e1-a006b6eb8624",
           "properties": {
             "sampleText": "Value"
           }

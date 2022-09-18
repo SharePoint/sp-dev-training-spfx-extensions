@@ -5,7 +5,7 @@
         RegistrationId="100"
         RegistrationType="List"
         Location="ClientSideExtension.ListViewCommandSet.CommandBar"
-        ClientSideComponentId="3be2fc87-25c0-4ab1-a66c-10667d5912f6"
+        ClientSideComponentId="9bb739ff-01e1-4489-9b6d-167cf3e1ee3a"
         ClientSideComponentProperties="{&quot;messagePrefix&quot;:&quot;[command_set_prefix]&quot;}">
     </CustomAction>
 </Elements>

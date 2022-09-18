@@ -5,13 +5,10 @@ import { Log } from '@microsoft/sp-core-library';
 import {
   BaseListViewCommandSet,
   Command,
-  IListViewCommandSetListViewUpdatedParameters,
   IListViewCommandSetExecuteEventParameters,
   ListViewStateChangedEventArgs
 } from '@microsoft/sp-listview-extensibility';
 import { Dialog } from '@microsoft/sp-dialog';
-
-import * as strings from 'CommandSetDemoCommandSetStrings';
 
 /**
  * If your command set uses the ClientSideComponentProperties JSON input,
@@ -28,27 +25,26 @@ export default class CommandSetDemoCommandSet extends BaseListViewCommandSet<ICo
 
   public onInit(): Promise<void> {
     Log.info(LOG_SOURCE, 'Initialized CommandSetDemoCommandSet');
+
+    const one_item_selected: Command = this.tryGetCommand('ONE_ITEM_SELECTED');
+    one_item_selected.visible = false;
+
+    const two_item_selected: Command = this.tryGetCommand('TWO_ITEM_SELECTED');
+    two_item_selected.visible = false;
+
+    this.context.listView.listViewStateChangedEvent.add(this, this._onListViewStateChanged);
+
     return Promise.resolve();
   }
 
-  public onListViewUpdated(event: IListViewCommandSetListViewUpdatedParameters): void {
-    const one_item_selected: Command = this.tryGetCommand('ONE_ITEM_SELECTED');
-    if (one_item_selected) {
-      one_item_selected.visible = event.selectedRows.length === 1;
-    }
-    const two_item_selected: Command = this.tryGetCommand('TWO_ITEM_SELECTED');
-    if (two_item_selected) {
-      two_item_selected.visible = event.selectedRows.length === 2;
-    }
-  }
-
   public onExecute(event: IListViewCommandSetExecuteEventParameters): void {
+    /* eslint-disable @typescript-eslint/no-floating-promises */
     switch (event.itemId) {
       case 'ONE_ITEM_SELECTED':
         Dialog.alert(`${this.properties.messagePrefix} ONE_ITEM_SELECTED command checked; Title = ${event.selectedRows[0].getValueByName('Title')}`);
         break;
       case 'TWO_ITEM_SELECTED':
-        Dialog.alert(`${this.properties.messagePrefix} TWO_ITEM_SELECTED command checked; Title = ${event.selectedRows[event.selectedRows.length-1].getValueByName('Title')}`);
+        Dialog.alert(`${this.properties.messagePrefix} TWO_ITEM_SELECTED command checked; Title = ${event.selectedRows[event.selectedRows.length - 1].getValueByName('Title')}`);
         break;
       case 'ALWAYS_ON':
         Dialog.alert(`${this.properties.messagePrefix} ALWAYS_ON command checked. Total selected: ${event.selectedRows.length}`);
@@ -56,5 +52,22 @@ export default class CommandSetDemoCommandSet extends BaseListViewCommandSet<ICo
       default:
         throw new Error('Unknown command');
     }
+    /* eslint-enable @typescript-eslint/no-floating-promises */
+  }
+
+  private _onListViewStateChanged = (args: ListViewStateChangedEventArgs): void => {
+    Log.info(LOG_SOURCE, 'List view state changed');
+
+    const one_item_selected: Command = this.tryGetCommand('ONE_ITEM_SELECTED');
+    if (one_item_selected) {
+      one_item_selected.visible = this.context.listView.selectedRows?.length === 1;
+    }
+    const two_item_selected: Command = this.tryGetCommand('TWO_ITEM_SELECTED');
+    if (two_item_selected) {
+      two_item_selected.visible = this.context.listView.selectedRows?.length === 2;
+    }
+
+    // You should call this.raiseOnChage() to update the command bar
+    this.raiseOnChange();
   }
 }
