@@ -33,14 +33,6 @@ export default class HelloAppCustomizerApplicationCustomizer
   private _topPlaceholder: PlaceholderContent | undefined;
   private _bottomPlaceholder: PlaceholderContent | undefined;
 
-  public onInit(): Promise<void> {
-    Log.info(LOG_SOURCE, `Initialized ${strings.Title}`);
-
-    this.context.placeholderProvider.changedEvent.add(this, this._renderPlaceHolders);
-
-    return Promise.resolve();
-  }
-
   private _onDispose(): void {
     console.log('[HelloWorldApplicationCustomizer._onDispose] Disposed custom top and bottom placeholders.');
   }
@@ -107,5 +99,13 @@ export default class HelloAppCustomizerApplicationCustomizer
         }
       }
     }
+  }
+
+  public onInit(): Promise<void> {
+    Log.info(LOG_SOURCE, `Initialized ${strings.Title}`);
+
+    this.context.placeholderProvider.changedEvent.add(this, this._renderPlaceHolders);
+    
+    return Promise.resolve();
   }
 }
