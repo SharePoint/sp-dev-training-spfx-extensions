@@ -1,6 +1,3 @@
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT license.
-
 import { Log } from '@microsoft/sp-core-library';
 import {
   BaseListViewCommandSet,
@@ -67,7 +64,7 @@ export default class CommandSetDemoCommandSet extends BaseListViewCommandSet<ICo
       two_item_selected.visible = this.context.listView.selectedRows?.length === 2;
     }
 
-    // You should call this.raiseOnChage() to update the command bar
+    // You should call this.raiseOnChange() to update the command bar
     this.raiseOnChange();
   }
 }

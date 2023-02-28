@@ -2,6 +2,9 @@
   "name": "sp-fx-app-customizer",
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "node": ">=16.13.0 <17.0.0"
+  },
   "main": "lib/index.js",
   "scripts": {
     "build": "gulp bundle",
@@ -9,19 +12,19 @@
     "test": "gulp test"
   },
   "dependencies": {
-    "@microsoft/decorators": "1.15.2",
-    "@microsoft/sp-application-base": "1.15.2",
-    "@microsoft/sp-core-library": "1.15.2",
-    "@microsoft/sp-dialog": "1.15.2",
-    "@microsoft/sp-office-ui-fabric-core": "^1.15.2",
+    "@microsoft/decorators": "1.16.1",
+    "@microsoft/sp-application-base": "1.16.1",
+    "@microsoft/sp-core-library": "1.16.1",
+    "@microsoft/sp-dialog": "1.16.1",
+    "@microsoft/sp-office-ui-fabric-core": "^1.16.1",
     "tslib": "2.3.1"
   },
   "devDependencies": {
-    "@microsoft/eslint-config-spfx": "1.15.2",
-    "@microsoft/eslint-plugin-spfx": "1.15.2",
+    "@microsoft/eslint-config-spfx": "1.16.1",
+    "@microsoft/eslint-plugin-spfx": "1.16.1",
     "@microsoft/rush-stack-compiler-4.5": "0.2.2",
-    "@microsoft/sp-build-web": "1.15.2",
-    "@microsoft/sp-module-interfaces": "1.15.2",
+    "@microsoft/sp-build-web": "1.16.1",
+    "@microsoft/sp-module-interfaces": "1.16.1",
     "@rushstack/eslint-config": "2.5.1",
     "@types/webpack-env": "~1.15.2",
     "ajv": "^6.12.5",

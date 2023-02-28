@@ -4,9 +4,9 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://m365x58094498.sharepoint.com/sites/DeveloperSite/SitePages/Home.aspx",
+      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "customActions": {
-        "0d57ad6e-5323-4654-be75-f0d7b2189557": {
+        "866434f6-f3a8-4b87-956f-4aa18eb5693c": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
             "header": "Header area of the page",
@@ -18,7 +18,7 @@
     "helloAppCustomizer": {
       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "customActions": {
-        "0d57ad6e-5323-4654-be75-f0d7b2189557": {
+        "866434f6-f3a8-4b87-956f-4aa18eb5693c": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
             "testMessage": "Test message"

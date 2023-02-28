@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-    <Field ID="{ecb11112-76d6-4dd6-8a1b-ac01acbd17d5}"
+    <Field ID="{74811c0a-d4fd-4a07-b00c-8a2cb75886b3}"
             Name="SPFxPercentage"
             DisplayName="Percentage"
             Type="Number"
             Min="0"
             Required="FALSE"
             Group="SPFx Columns"
-            ClientSideComponentId="4164fbcc-8feb-43d2-b6d2-a1f1d1c4f003"
+            ClientSideComponentId="49e1652f-043f-4f53-9905-27fcd4fef9c6"
             ClientSideComponentProperties="{&quot;greenMinLimit&quot;:&quot;85&quot;,&quot;yellowMinLimit&quot;:&quot;70&quot;}">
     </Field>
 </Elements>
