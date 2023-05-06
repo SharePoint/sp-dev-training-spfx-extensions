@@ -1,13 +1,10 @@
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT license.
-
 import { Log } from '@microsoft/sp-core-library';
 import {
   BaseApplicationCustomizer,
   PlaceholderContent,
   PlaceholderName
 } from '@microsoft/sp-application-base';
-import { Dialog } from '@microsoft/sp-dialog';
+// import { Dialog } from '@microsoft/sp-dialog';
 
 import * as strings from 'HelloAppCustomizerApplicationCustomizerStrings';
 
@@ -22,6 +19,7 @@ const LOG_SOURCE: string = 'HelloAppCustomizerApplicationCustomizer';
  * You can define an interface to describe it.
  */
 export interface IHelloAppCustomizerApplicationCustomizerProperties {
+  // This is an example; replace with your own property
   header: string;
   footer: string;
 }
@@ -32,6 +30,14 @@ export default class HelloAppCustomizerApplicationCustomizer
 
   private _topPlaceholder: PlaceholderContent | undefined;
   private _bottomPlaceholder: PlaceholderContent | undefined;
+
+  public onInit(): Promise<void> {
+    Log.info(LOG_SOURCE, `Initialized ${strings.Title}`);
+
+    this.context.placeholderProvider.changedEvent.add(this, this._renderPlaceHolders);
+
+    return Promise.resolve();
+  }
 
   private _onDispose(): void {
     console.log('[HelloWorldApplicationCustomizer._onDispose] Disposed custom top and bottom placeholders.');
@@ -99,13 +105,7 @@ export default class HelloAppCustomizerApplicationCustomizer
         }
       }
     }
+
   }
 
-  public onInit(): Promise<void> {
-    Log.info(LOG_SOURCE, `Initialized ${strings.Title}`);
-
-    this.context.placeholderProvider.changedEvent.add(this, this._renderPlaceHolders);
-    
-    return Promise.resolve();
-  }
 }

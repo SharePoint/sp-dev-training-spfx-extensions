@@ -2,21 +2,21 @@
 
 This module will introduce you to extending the SharePoint user interface with extensions.
 
-> This module is also published as a Microsoft Learn module: [Enable SharePoint Framework Web Part Configuration with Property Panes](https://docs.microsoft.com/learn/modules/sharepoint-spfx-extensions)
+> This module is also published as a Microsoft Learn module: [Enable SharePoint Framework Web Part Configuration with Property Panes](https://learn.microsoft.com/training/modules/sharepoint-spfx-extensions)
 
 ## Lab - Extend the SharePoint user interface with SharePoint Framework extensions
 
 The lab for this module is available in multiple units within the associated Microsoft Learn module. Use the following links to jump to the specific unit. Each Microsoft Learn unit represents a different lab exercise & demo in the presentation.
 
-- [Exercise - Create an application customizer extension](https://docs.microsoft.com/learn/modules/sharepoint-spfx-extensions/3-exercise-application-customizer)
+- [Exercise - Create an application customizer extension](https://learn.microsoft.com/training/modules/sharepoint-spfx-extensions/3-exercise-application-customizer)
 
   In this exercise, you'll create a SharePoint Framework (SPFx) application customizer extension.
 
-- [Exercise - Create a field customizer extension](https://docs.microsoft.com/learn/modules/sharepoint-spfx-extensions/5-exercise-field-customizer)
+- [Exercise - Create a field customizer extension](https://learn.microsoft.com/training/modules/sharepoint-spfx-extensions/5-exercise-field-customizer)
 
   In this exercise, you'll create a SharePoint Framework (SPFx) field customizer extension that will display a colored bar in a column with a percentage of the bar filled depending on the value in the field.
 
-- [Exercise - Customize lists with command set extensions](https://docs.microsoft.com/learn/modules/sharepoint-spfx-extensions/7-exercise-command-set-customizer)
+- [Exercise - Customize lists with command set extensions](https://learn.microsoft.com/training/modules/sharepoint-spfx-extensions/7-exercise-command-set-customizer)
 
   In this exercise, you'll create a SharePoint Framework (SPFx) command set extension that will display custom buttons in a SharePoint list.
 
@@ -35,13 +35,15 @@ This module has been recorded and is available in the SharePoint Development You
 | Roles                | Author(s)                                                                                                      |
 | -------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Lab Manuals / Slides | Andrew Connell (Microsoft MVP, [Voitanos](//github.com/voitanos)) [@andrewconnell](//github.com/andrewconnell) |
-| QA                   | Rob Windsor (Microsoft MVP) [@rob-windsor](//github.com/rob-windsor)                               |
+| QA                   | Rob Windsor (Microsoft MVP) [@rob-windsor](//github.com/rob-windsor)                                           |
 | Sponsor / Support    | Vesa Juvonen (Microsoft) [@VesaJuvonen](//github.com/VesaJuvonen)                                              |
 
 ## Version history
 
-| Version |       Date        |                      Comments                      |
+| Version | Date              | Comments                                           |
 | ------- | ----------------- | -------------------------------------------------- |
+| 1.18    | May 5, 2023       | FY2023Q4 content refresh; update to SPFx v1.17.1   |
+| 1.17    | February 28, 2023 | FY2023Q3 content refresh; update to SPFx v1.16.1   |
 | 1.16    | December 5, 2022  | FY2023Q1 content refresh                           |
 | 1.15    | September 5, 2022 | FY2023Q1 content refresh; update for SPFx v1.15.2  |
 | 1.14    | May 2, 2022       | FY2022Q4 content refresh; update for SPFx v1.14    |
