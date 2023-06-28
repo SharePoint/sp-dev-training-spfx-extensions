@@ -1,6 +1,3 @@
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT license.
-
 import { Log } from '@microsoft/sp-core-library';
 import {
   BaseListViewCommandSet,
@@ -16,6 +13,7 @@ import { Dialog } from '@microsoft/sp-dialog';
  * You can define an interface to describe it.
  */
 export interface ICommandSetDemoCommandSetProperties {
+  // This is an example; replace with your own properties
   messagePrefix: string;
 }
 
@@ -35,6 +33,7 @@ export default class CommandSetDemoCommandSet extends BaseListViewCommandSet<ICo
     this.context.listView.listViewStateChangedEvent.add(this, this._onListViewStateChanged);
 
     return Promise.resolve();
+
   }
 
   public onExecute(event: IListViewCommandSetExecuteEventParameters): void {
@@ -67,7 +66,7 @@ export default class CommandSetDemoCommandSet extends BaseListViewCommandSet<ICo
       two_item_selected.visible = this.context.listView.selectedRows?.length === 2;
     }
 
-    // You should call this.raiseOnChage() to update the command bar
+    // You should call this.raiseOnChange() to update the command bar
     this.raiseOnChange();
   }
 }
