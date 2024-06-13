@@ -4,10 +4,10 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
+      "pageUrl": "https://{tenantDomain}/sites/DeveloperSite/Lists/Work%20Stsatus/AllItems.aspx",
       "fieldCustomizers": {
-        "InternalFieldName": {
-          "id": "c02fb240-c1a0-4a65-9f56-e07715d09de2",
+        "PercentComplete": {
+          "id": "72f2b6fe-a349-4fdf-aa31-902f41e4769b",
           "properties": {
             "greenMinLimit": "85",
             "yellowMinLimit": "70"
@@ -16,12 +16,13 @@
       }
     },
     "helloFieldCustomizer": {
-      "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
+      "pageUrl": "https://{tenantDomain}/sites/DeveloperSite/Lists/Work%20Stsatus/AllItems.aspx",
       "fieldCustomizers": {
-        "InternalFieldName": {
-          "id": "c02fb240-c1a0-4a65-9f56-e07715d09de2",
+        "PercentComplete": {
+          "id": "72f2b6fe-a349-4fdf-aa31-902f41e4769b",
           "properties": {
-            "sampleText": "Value"
+            "greenMinLimit": "85",
+            "yellowMinLimit": "70"
           }
         }
       }

@@ -2,14 +2,14 @@
   "@microsoft/generator-sharepoint": {
     "plusBeta": false,
     "isCreatingSolution": true,
-    "nodeVersion": "16.18.1",
+    "nodeVersion": "18.20.1",
     "sdksVersions": {
       "@microsoft/microsoft-graph-client": "3.0.2",
-      "@microsoft/teams-js": "2.9.1"
+      "@microsoft/teams-js": "2.12.0"
     },
-    "version": "1.17.1",
+    "version": "1.19.0",
     "libraryName": "sp-fx-command-set",
-    "libraryId": "3fb9506c-7cc5-4254-aca2-78bad6bfc394",
+    "libraryId": "3d8389e6-2a2e-4952-8a19-5cddc6af16b4",
     "environment": "spo",
     "packageManager": "npm",
     "solutionName": "SPFxCommandSet",

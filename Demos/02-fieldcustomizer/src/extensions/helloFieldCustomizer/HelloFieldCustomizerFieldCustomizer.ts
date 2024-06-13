@@ -1,7 +1,7 @@
 import { Log } from '@microsoft/sp-core-library';
 import {
   BaseFieldCustomizer,
-  IFieldCustomizerCellEventParameters
+  type IFieldCustomizerCellEventParameters
 } from '@microsoft/sp-listview-extensibility';
 
 import * as strings from 'HelloFieldCustomizerFieldCustomizerStrings';
@@ -50,9 +50,9 @@ export default class HelloFieldCustomizerFieldCustomizer
         </div>
       `;
     } else {
-      if (fieldValue >= parseInt(this.properties.greenMinLimit)) {
+      if (fieldValue >= parseInt(this.properties.greenMinLimit as string)) {
         filledColor = '#00ff00';
-      } else if (fieldValue >= parseInt(this.properties.yellowMinLimit)) {
+      } else if (fieldValue >= parseInt(this.properties.yellowMinLimit as string)) {
         filledColor = '#ffff00';
       } else {
         filledColor = '#ff0000';

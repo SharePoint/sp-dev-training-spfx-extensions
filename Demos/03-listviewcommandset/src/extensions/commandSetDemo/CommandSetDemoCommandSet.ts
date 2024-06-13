@@ -1,9 +1,9 @@
 import { Log } from '@microsoft/sp-core-library';
 import {
   BaseListViewCommandSet,
-  Command,
-  IListViewCommandSetExecuteEventParameters,
-  ListViewStateChangedEventArgs
+  type Command,
+  type IListViewCommandSetExecuteEventParameters,
+  type ListViewStateChangedEventArgs
 } from '@microsoft/sp-listview-extensibility';
 import { Dialog } from '@microsoft/sp-dialog';
 
@@ -13,7 +13,6 @@ import { Dialog } from '@microsoft/sp-dialog';
  * You can define an interface to describe it.
  */
 export interface ICommandSetDemoCommandSetProperties {
-  // This is an example; replace with your own properties
   messagePrefix: string;
 }
 
@@ -33,7 +32,6 @@ export default class CommandSetDemoCommandSet extends BaseListViewCommandSet<ICo
     this.context.listView.listViewStateChangedEvent.add(this, this._onListViewStateChanged);
 
     return Promise.resolve();
-
   }
 
   public onExecute(event: IListViewCommandSetExecuteEventParameters): void {

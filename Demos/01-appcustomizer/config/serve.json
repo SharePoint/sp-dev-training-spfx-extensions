@@ -4,9 +4,9 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
+      "pageUrl": "https://{tenantDomain}/sites/DeveloperSite/SitePages/CollabHome.aspx",
       "customActions": {
-        "87e31a5b-9cdc-4b98-ba1d-959429ae33ce": {
+        "d94a4d1f-a9f5-44de-a150-12034336b6ad": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
             "header": "Header area of the page",
@@ -16,12 +16,13 @@
       }
     },
     "helloAppCustomizer": {
-      "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
+      "pageUrl": "https://{tenantDomain}/sites/DeveloperSite/SitePages/CollabHome.aspx",
       "customActions": {
-        "87e31a5b-9cdc-4b98-ba1d-959429ae33ce": {
+        "d94a4d1f-a9f5-44de-a150-12034336b6ad": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "testMessage": "Test message"
+            "header": "Header area of the page",
+            "footer": "Footer area of the page"
           }
         }
       }
