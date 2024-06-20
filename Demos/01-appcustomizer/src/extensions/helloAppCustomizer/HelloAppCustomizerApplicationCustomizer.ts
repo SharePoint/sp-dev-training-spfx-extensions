@@ -4,7 +4,6 @@ import {
   PlaceholderContent,
   PlaceholderName
 } from '@microsoft/sp-application-base';
-// import { Dialog } from '@microsoft/sp-dialog';
 
 import * as strings from 'HelloAppCustomizerApplicationCustomizerStrings';
 
@@ -20,6 +19,7 @@ const LOG_SOURCE: string = 'HelloAppCustomizerApplicationCustomizer';
  */
 export interface IHelloAppCustomizerApplicationCustomizerProperties {
   // This is an example; replace with your own property
+  testMessage: string;
   header: string;
   footer: string;
 }
@@ -37,10 +37,6 @@ export default class HelloAppCustomizerApplicationCustomizer
     this.context.placeholderProvider.changedEvent.add(this, this._renderPlaceHolders);
 
     return Promise.resolve();
-  }
-
-  private _onDispose(): void {
-    console.log('[HelloWorldApplicationCustomizer._onDispose] Disposed custom top and bottom placeholders.');
   }
 
   private _renderPlaceHolders(): void {
@@ -106,6 +102,10 @@ export default class HelloAppCustomizerApplicationCustomizer
       }
     }
 
+  }
+
+  private _onDispose(): void {
+    console.log('[HelloWorldApplicationCustomizer._onDispose] Disposed custom top and bottom placeholders.');
   }
 
 }
