@@ -4,6 +4,7 @@ import {
   PlaceholderContent,
   PlaceholderName
 } from '@microsoft/sp-application-base';
+import { Dialog } from '@microsoft/sp-dialog';
 
 import * as strings from 'HelloAppCustomizerApplicationCustomizerStrings';
 

@@ -6,10 +6,11 @@
     "default": {
       "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
       "customActions": {
-        "45e98eb3-2e9d-4184-9254-172fcd264934": {
+        "2f61e499-40b4-4b13-9a0c-eaf3e3241382": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
           "properties": {
-            "messagePrefix": "[command_set_prefix]"
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
           }
         }
       }
@@ -17,10 +18,11 @@
     "commandSetDemo": {
       "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
       "customActions": {
-        "45e98eb3-2e9d-4184-9254-172fcd264934": {
+        "2f61e499-40b4-4b13-9a0c-eaf3e3241382": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
           "properties": {
-            "messagePrefix": "[command_set_prefix]"
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
           }
         }
       }
