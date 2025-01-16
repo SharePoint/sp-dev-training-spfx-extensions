@@ -5,5 +5,5 @@
         Location="ClientSideExtension.ListViewCommandSet.CommandBar"
         ListTemplateId="100"
         Properties="{&quot;sampleTextOne&quot;:&quot;One item is selected in the list.&quot;, &quot;sampleTextTwo&quot;:&quot;This command is always visible.&quot;}"
-        ComponentId="45e98eb3-2e9d-4184-9254-172fcd264934" />
+        ComponentId="2f61e499-40b4-4b13-9a0c-eaf3e3241382" />
 </Elements>
