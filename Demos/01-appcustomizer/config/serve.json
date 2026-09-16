@@ -6,7 +6,7 @@
     "default": {
       "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
       "customActions": {
-        "342e615e-2efd-41f6-aa02-4993f5a84db2": {
+        "39046d98-bc1e-4e33-9161-bf7980c2d52b": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
             "testMessage": "Test message"
@@ -17,7 +17,7 @@
     "helloAppCustomizer": {
       "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
       "customActions": {
-        "342e615e-2efd-41f6-aa02-4993f5a84db2": {
+        "39046d98-bc1e-4e33-9161-bf7980c2d52b": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
             "testMessage": "Test message"

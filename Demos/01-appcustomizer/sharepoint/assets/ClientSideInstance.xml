@@ -3,7 +3,7 @@
     <ClientSideComponentInstance
         Title="HelloAppCustomizer"
         Location="ClientSideExtension.ApplicationCustomizer"
-        ComponentId="342e615e-2efd-41f6-aa02-4993f5a84db2"
+        ComponentId="39046d98-bc1e-4e33-9161-bf7980c2d52b"
         Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
     </ClientSideComponentInstance>
 </Elements>
